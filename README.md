@@ -16,7 +16,7 @@ The idea was to parallelize some well-known algorithm, e.g Sieve of Eratosthenes
 
 Example usage: 
 ```console
-user@login:~/parallel-sieve-of-eratosthenes/$ make
+user@login:~/parallel-sieve-of-eratosthenes$ make
 g++ -fopenmp -c misc.cpp -o misc.o
 g++ -fopenmp -c soe.cpp -o soe.o
 g++ -fopenmp -c soe_odd_only.cpp -o soe_odd_only.o
@@ -24,7 +24,7 @@ g++ -fopenmp -c soe_odd_only_blockwise.cpp -o soe_odd_only_blockwise.o
 g++ -fopenmp -c soe_odd_only_blockwise_sqrt.cpp -o soe_odd_only_blockwise_sqrt.o
 g++ -fopenmp -c main.cpp -o main.o
 g++ -fopenmp misc.o soe.o soe_odd_only.o soe_odd_only_blockwise.o soe_odd_only_blockwise_sqrt.o main.o -o main
-user@login:~/parallel-sieve-of-eratosthenes/$ ./main soe_odd_only_blockwise 1000000000 P
+user@login:~/parallel-sieve-of-eratosthenes$ ./main soe_odd_only_blockwise 1000000000 P
 50847534
 ```
 
