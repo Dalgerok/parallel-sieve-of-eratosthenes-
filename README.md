@@ -12,7 +12,7 @@ The idea was to parallelize some well-known algorithm, e.g Sieve of Eratosthenes
 - "soe" - simple algorithm.
 - "soe_odd_only" - only odd numbers optimization.
 - "soe_odd_only_blockwise" - only odd numbers with block by block optimization.
-- "soe_odd_only_blockwise_sqrt" - only odd prime numbers <= $\sqrt{sieve_bound}$ with block by block optimization. 
+- "soe_odd_only_blockwise_sqrt" - only odd prime numbers <= sqrt(sieve_bound) with block by block optimization. 
 
 Example usage: 
 ```console
@@ -33,6 +33,7 @@ user@login:~/parallel-sieve-of-eratosthenes$ ./main soe_odd_only_blockwise 10000
 Run `python3 benchmark.py` to see benchmark results in console.
 
 Example benchmark:
+```console
 user@long:~/parallel-sieve-of-eratosthenes$ python3 benchmark.py 
 +-------+--------+--------+--------------+----------------+------------------------+--------------------------+-----------------------------+-------------------------------+
 |       |  soe   |  soe P | soe_odd_only | soe_odd_only P | soe_odd_only_blockwise | soe_odd_only_blockwise P | soe_odd_only_blockwise_sqrt | soe_odd_only_blockwise_sqrt P |
@@ -44,3 +45,4 @@ user@long:~/parallel-sieve-of-eratosthenes$ python3 benchmark.py
 | 10^10 | 800.22 |  70.24 |     302.16   |      31.82     |         100.96         |           7.43           |            79.91            |              6.03             |
 | 10^11 | MEM    |  MEM   |     MEM      |      MEM       |        1603.32         |          116.27          |            972.61           |             69.94             |
 +-------+--------+--------+--------------+----------------+------------------------+--------------------------+-----------------------------+-------------------------------+
+```
