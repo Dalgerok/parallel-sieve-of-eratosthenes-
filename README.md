@@ -2,7 +2,7 @@
 
 University project was made for the course of Concurrent Programming on faculty of Theoretical Computer Science at Jagiellonian University.
 
-The idea was to parallelize some well-known algorithm, e.g Sieve of Eratosthenes.
+The idea was to parallelize some well-known algorithm, e.g Sieve of Eratosthenes, using OpenMP.
 
 ## Compile and Run
 
