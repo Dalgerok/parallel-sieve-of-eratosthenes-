@@ -32,7 +32,7 @@ user@login:~/parallel-sieve-of-eratosthenes$ ./main soe_odd_only_blockwise 10000
 
 Run `python3 benchmark.py` to see benchmark results in console.
 
-Example benchmark:
+Example benchmark, runned on Intel(R) Xeon(R) CPU X5650 @ 2.67GHz with 24 CPUs:
 ```console
 user@long:~/parallel-sieve-of-eratosthenes$ python3 benchmark.py 
 +-------+--------+--------+--------------+----------------+------------------------+--------------------------+-----------------------------+-------------------------------+
